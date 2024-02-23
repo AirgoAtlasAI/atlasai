@@ -19,17 +19,18 @@ AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provi
 - **THIRD-PARTY VALIDATED**- Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different metal replacement with FRTC material projects, i.e., comparing Atlas-AI vs conventional CAE methods. Atlas-AI performance was closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams. 
 
 ---
-
-## Workflow
-![Workflow](assets/images/General_workflow01.png)
-
-
-
 ## AtlasPre and AtlasPost
 
+AtlasPre and AtlasPost (and AtlasPost-Viewer in extension) provide the standard Pre and Post processing tools for FRTC FEM models.
 
+![Workflow](assets/images/General_workflow01.png)
+
+## AtlasPre
 
 ![AtlasPre](assets/images/AtlasAI_Pre.png)
+
+## AtlasPost
+
 ![AtlasPost](assets/images/AtlasAI_Post.png)
 
 

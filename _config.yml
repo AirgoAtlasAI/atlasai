@@ -1,5 +1,5 @@
 title: Airgo Atlas-AI
-description: FEM plugin suite for handling SFRP simulations
+description: FEM plugin suite for SFRP simulations
 
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
