@@ -1,4 +1,4 @@
-# Airgo Atlas-AI
+# AirGo Atlas-AI
 
 ![AtlasAI](assets/images/AtlasAI_logo_256x256.png)
 
@@ -12,7 +12,7 @@ AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provi
 
 - **FAST yet ACCURATE**: No trade-off between speed and accuracy. No solver coupling required. The Atlas-AI method does not require detailed FEM model.  
 
-- **PROPRIETRY FAILURE MODEL**: Atlas-AI includes Airgo's proprietary failure criterion which outperforms standard failure models.
+- **PROPRIETRY FAILURE MODEL**: Atlas-AI includes AirGo's proprietary failure criterion which outperforms standard failure models.
 
 - **MATERIAL/SOFTWARE AGNOSTIC**: Atlas-AI solutions can be adapted to multiple FEM software, covering implicit and explicit analysis. Atlas-AI solutions can be applied to all FRTC standards. 
 
@@ -104,7 +104,7 @@ AtlasXL currently supports data extraction from LS-Dyna d3plots and binout files
 
 ## AtlasEndura
 
-AtlasEndura provides the framework for conducting fatigue analysis on SFRT parts. LifeCycle and Failure life are based on Airgo's proprietary fatigue failure criterion.
+AtlasEndura provides the framework for conducting fatigue analysis on SFRT parts. LifeCycle and Failure life are based on AirGo's proprietary fatigue failure criterion.
 
 ![AtlasEndura](assets/images/atlasendura.png)
 
