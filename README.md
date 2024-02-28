@@ -78,7 +78,7 @@ This process includes:-
 - New FEM file creation. 
 - Quickcheck of material properties using gmsh as viewer. Include macros for generating images for documentation purposes.
 
-![AtlasPre](assets/images/AtlasPre.png)
+![AtlasPre](assets/images/atlaspre.png)
 
 
 ## AtlasPost ( and AtlasPost-Viewer ):
@@ -90,7 +90,8 @@ AtlasPost allows users to downselects to the components of interest and splits t
    - Smaller files for post-processing. (up to **90% smaller**)
    - The choice to create and load only selected results (e.g. displacement, stress, Y-Failure).
    - Faster loading time (up to **90% faster**)
-![AtlasPost](assets/images/AtlasPost.png)
+
+![AtlasPost](assets/images/atlaspost.png)
 
 
 ## AtlasXL
