@@ -8,15 +8,15 @@ AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provi
 
 ## Why use ATLAS-AI?
 
-- **AI and DATA-DRIVEN**: Material property generation based on statistically derived data. No micro-level simulation required. Fiber orientation data is adjusted for accuracy.
+- **AI** and **DATA-DRIVEN**: Material property generation based on statistically derived data. No micro-level simulation required. Fiber orientation data is adjusted for accuracy.
 
-- **FAST yet ACCURATE**: No trade-off between speed and accuracy. No solver coupling required. The Atlas-AI method does not require detailed FEM model.  
+- **FAST** yet **ACCURATE**: No trade-off between speed and accuracy. No solver coupling required. The Atlas-AI method does not require detailed FEM model.  
 
 - **PROPRIETRY FAILURE MODEL**: Atlas-AI includes AirGo's proprietary failure criterion which outperforms standard failure models.
 
 - **MATERIAL/SOFTWARE AGNOSTIC**: Atlas-AI solutions can be adapted to multiple FEM software, covering implicit and explicit analysis. Atlas-AI solutions can be applied to all FRTC standards. 
 
-- **THIRD-PARTY VALIDATED**- Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different FRTC material projects, i.e., comparing Atlas-AI vs conventional CAE methods. Atlas-AI models completed with less time and predictions were closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams. 
+- **THIRD-PARTY VALIDATED**- Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different FRTC material projects, *i.e.*, comparing Atlas-AI vs conventional CAE methods. Atlas-AI models completed with less time and predictions were closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams. 
 
 ---
 
