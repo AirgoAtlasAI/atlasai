@@ -2,7 +2,7 @@
 
 ![AtlasAI](assets/images/AtlasAI_logo_256x256.png)
 
-AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provides a collection of tools for manipulating FEM models that have anisotropic material properties, tailored for structures produced with Fiber-Reinforced Thermocomposites (FRTC).
+AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provides a collection of tools for manipulating FEM models that have anisotropic material properties. This software is tailored for structures/components made of Fiber-Reinforced Thermoplastic Composites (FRTC).
 
 ---
 
@@ -29,21 +29,6 @@ AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provi
 In the simplest sense, Atlas-AI bridges the divide between manufacturing simulation and structural simulation.
 
 In the bigger picture, Atlas-AI helps engineers reached light-weighting design goals with efficiency, accuracy and minimal computational resources. With Atlas-AI, design iterations can be reduced from weeks (or months) to days.
-
----
-
-### About us
-AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
-
-### The EV Industry
-
-The demand for battery power, measured in gigawatt-hours, is expected to grow from 185 GWh in 2020 to 2,035 GWh by 2030, representing an 11-fold increase, with nearly 90% of the demand from transportation alone. Lithium-ion is the most dominant rechargeable battery technology, accounting for just over 40% of the global revenue share in 2022, driven mostly by its use in the EV industry.
-
-Over the years, metals have dominated the market for EV battery cases owing to their advantages, such as being extremely robust and impact-resistant, high-temperature tolerance, flame-retardant, and affordable. However, in recent years, the penetration of composite battery cases has been growing at a rapid pace owing to factors such as lighter weight, high production rate, and to a certain extent, higher mechanical performance compared to metals. 
-
-AirGo is looking into composite battery enclosures for the rapidly emerging short/medium-haul electric aircraft market, i.e., a combination of commercial urban air mobility vehicles (UAVs, eVTOLs, etc.) (e.g., E-hang EH216-S, Xpeng AeroHT, etc.) and larger regional/private jets e-aircraft such as COMAC ARJ21, Heart airspace’s ES-30, Energia Electric (E9-FE), etc. This market was valued at $9 billion in 2022, with a 20% CAGR, and has the prospect to reach $67 billion by 2033.
-
-Atlas-AI provide the necessary tools for the job.
 
 ---
 
@@ -81,10 +66,9 @@ This process includes:-
 ![AtlasPre](assets/images/atlaspre.png)
 
 
-## AtlasPost ( and AtlasPost-Viewer ):
+## AtlasPost
 
-Large FEM output binary files typically contains everything i.e. all element and all results. Conventional post-processing programs will
-
+Large FEM output binary files typically contains everything i.e. all element and all results. Conventional post-processing software will be sluggish when loading a model with large number of material properties.
 
 AtlasPost allows users to downselects to the components of interest and splits the data by result types instead of timesteps. Thus, this gives:-
    - Smaller files for post-processing. (up to **90% smaller**)
@@ -125,6 +109,23 @@ AtlasEndura provides the framework for conducting fatigue analysis on SFRT parts
   Another logic that is built into some modules is that all related input files are placed in the same directory. Given  working directory, the input files are autofilled.
 
   ![autofill](assets/images/general_autofill_wdir.png)
+
+  
+### About us
+AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
+
+### The EV Industry
+
+The demand for battery power, measured in gigawatt-hours, is expected to grow from 185 GWh in 2020 to 2,035 GWh by 2030, representing an 11-fold increase, with nearly 90% of the demand from transportation alone. Lithium-ion is the most dominant rechargeable battery technology, accounting for just over 40% of the global revenue share in 2022, driven mostly by its use in the EV industry.
+
+Over the years, metals have dominated the market for EV battery cases owing to their advantages, such as being extremely robust and impact-resistant, high-temperature tolerance, flame-retardant, and affordable. However, in recent years, the penetration of composite battery cases has been growing at a rapid pace owing to factors such as lighter weight, high production rate, and to a certain extent, higher mechanical performance compared to metals. 
+
+AirGo is looking into composite battery enclosures for the rapidly emerging short/medium-haul electric aircraft market, i.e., a combination of commercial urban air mobility vehicles (UAVs, eVTOLs, etc.) (e.g., E-hang EH216-S, Xpeng AeroHT, etc.) and larger regional/private jets e-aircraft such as COMAC ARJ21, Heart airspace’s ES-30, Energia Electric (E9-FE), etc. This market was valued at $9 billion in 2022, with a 20% CAGR, and has the prospect to reach $67 billion by 2033.
+
+Atlas-AI provide the necessary tools for the job.
+
+---
+
 
 ## Contact Us
 
