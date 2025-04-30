@@ -1,3 +1,4 @@
+<div style="text-align: justify;">
 # AirGo Design Atlas-AI
 
 ![img_AtlasAI](assets/images/AtlasAI_logo_256x256.png)
@@ -166,3 +167,4 @@ AirGo develops innovative lightweight technologies for demanding applications in
 ## Contact Us
 
 For more information or a demo, email to atlas@airgodesign.com
+</div>
