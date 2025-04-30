@@ -77,11 +77,11 @@ ATLAS-MAT’s Data-Corrected Micromechanics (DCM) has proven to be accurate. Sho
 
 ### Case Study (1) Aircraft Armrest
 
-The ATLAS-AI-integrated FEM models was evaluated on an established AirGo Design’s CARBON aircraft seat armrest  component.  It is noteworthy that ATLAS-AI methodology was originally applied in development of the CARBON seats starting from design/manufacturing of the armrest, which was fabricated and tested according to standard abuse loads. The material grade is of the PEI family with 20% carbon fiber content.
+The ATLAS-AI-integrated FEM models were evaluated on an established AirGo Design’s CARBON aircraft seat armrest  component.  It is noteworthy that ATLAS-AI methodology was originally applied in development of the CARBON seats starting from design/manufacturing of the armrest, which was fabricated and tested according to standard abuse loads. The material grade is of the PEI family with 20% carbon fiber content.
 
 ![img_CARBON_Armrest](assets/images/CARBON_Armrest.png)
 
-The structural simulation was conducted with Ansys LS-Dyna. A Quasi-static analysis was set up to simulate the downward abuse load. To achieve better precision in  simulating the armrest's deformation under load, the FEM model incorporates not only the armrest itself but also the test rig it is secured to.
+The structural simulations were conducted with Ansys LS-Dyna. To achieve better precision in  simulating the armrest's deformation under load, the FEM model incorporates not only the armrest itself but also the test rig it is secured to.
 
 ![img_CARBON_Armrest_FEM](assets/images/CARBON_Armrest_FEM.png)
 
@@ -103,15 +103,42 @@ The anisotropic material cards are then defined and assigned according to the mo
 #### Load vs Displacement
 Based on the load displacement curves for test and FEM, the ATLAS-AI/Moldflow approach achieved **70%** accuracy whereas ATLAS-AI/Moldex3D approach demonstrated a notable **91.8%** accuracy, outperforming conventional method with 59.2%.
 
-![CARBON_Armrest_FEM_vs_Test](assets/images/CARBON_Armrest_FEM_vs_Test.png)
+![img_CARBON_Armrest_FEM_vs_Test](assets/images/CARBON_Armrest_FEM_vs_Test.png)
 
 #### Failure Prediction
 
 ATLAS-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion and compared with actual part failure. Y-Failure plots show the onset of failure around the inner horizontal rib location. Analysis of test pictures showed strong indications that the failure was likely to have been initiated at the same rib location. 
 
-![CARBON_Armrest_FEM_vs_Test](assets/images/CARBON_Armrest_FailurePrediction.png)
+![img_CARBON_Armrest_FailurePrediction](assets/images/CARBON_Armrest_FailurePrediction.png)
 
 ---
+
+### Case Study (2) Pole Extender
+
+ATLAS-AI was also assessed on 60% short glass fiber reinforced Polyarylamide (PARA) pole extender. The component was designed and tested to withstand up to 900N bending load.
+
+![img_PoleExtender](assets/images/PoleExtender.png)
+
+ Figure below shows the component being attached to the test rig in a cantilever position. On the other end of the pole extender, a metal block is attached to distribute the applied load evenly onto the specimen.
+
+![img_PoleExtender_Test_and_FEM](assets/images/PoleExtender_Test_and_FEM.png)
+
+#### Preprocessing and Setup
+
+Similar to the previous case study, the component was also simulated for both anisotropic and conventional quasi-isotropic material methods. The FEM model also includes the test rig to obtain better precision in displacement results.
+
+#### Load vs Displacement
+
+Both ATLAS-AI/Moldflow and ATLAS-AI/Moldex3D anisotropic model achieved accuracies above 90%, compared to the 74.2% conventional method.
+
+![img_PoleExtender_FEM_vs_Test](assets/images/PoleExtender_FEM_vs_Test.png)
+
+#### Failure Prediction
+
+Atlas-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion. The simulation accurately predicted the failure location at the fastener point.
+
+![img_PoleExtender_FailurePrediction](assets/images/PoleExtender_FailurePrediction.png)
+
 ## About us
 AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
 
