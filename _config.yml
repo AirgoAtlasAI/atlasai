@@ -25,12 +25,13 @@ tags:
 - anisotropic
 - fiber orientation tensor
 - fot
-- optimized fiber orientation tensor mapping
-- finite element analysis
 - digimat
 - micromechanics
 - composite
 - multiscale
+- optimized fiber orientation tensor mapping
+- finite element analysis
+- finite element method
 
 
 ---

@@ -24,7 +24,9 @@ The mechanical performance of Fiber Reinforced Thermoplastics components are int
 
 ![img_FOT_in_FRT](assets/images/FOT_in_FRT_component.png)
 
-When it comes to simulation, working between micro-scale and macro-scale demands significant time, expertise in various domains, and computing resources. Furthermore, accessing material property data (including material data for the components of the compound, filler etc.) and allowables are not always straightforward, often necessitating costly laboratory testing and specialized knowledge. ATLAS-AI addresses these issues head-on.
+When it comes to simulation using established detailed analysis tools such as Digimat and Altair Multiscale Designer, working between micro-scale and macro-scale demands significant time, expertise in various domains, and computing resources. Furthermore, accessing material property data (including material data for the components of the compound, filler etc.) and allowables are not always straightforward, often necessitating costly laboratory testing and specialized knowledge. 
+
+Airgo Design's AI-powered ATLAS-AI suite addresses these issues head-on.
 
 ---
 
@@ -60,7 +62,7 @@ AirGo Design’s ATLAS-AI suits streamline structural analysis by bridging the g
 
 ![img_wheredowefit](assets/images/where_does_ATLAS-AI_fit_in.png)
 
-Unlike conventional tools that merely map fiber orientation tensor data to a separate structural mesh, ATLAS-AI intelligently adapts anisotropic material properties based on both geometry and material selection.
+Unlike conventional tools that merely map fiber orientation tensor data from a flow analysis software,(i.e Moldflow and Moldex3D), to a separate structural mesh, ATLAS-AI intelligently adapts anisotropic material properties based on both geometry and material selection.
 
 ---
 
@@ -87,7 +89,7 @@ ATLAS-MAT’s Data-Corrected Micromechanics (DCM) has proven to be accurate. Sho
 
 ![img_tsaihill vs atlasmat](assets/images/tsaihill_vs_atlasmat.png)
 
-## Part Level Validation 
+## Validation with Actual Parts
 
 ### Case Study (1) Aircraft Armrest
 
