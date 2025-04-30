@@ -8,10 +8,13 @@ plugins:
 tags:
 - atlas-ai
 - airgo design
-- ai-powered cae simulation
-- ai-assisted cae simulation
-- fiber reinforced thermoplastics (frt)
-- injection molding simulation
+- ai-powered 
+- ai-assisted
+- cae
+- fiber reinforced thermoplastics
+- frtp
+- simulation
+- injection molding 
 - moldex3d
 - moldflow
 - ls-dyna
@@ -19,10 +22,11 @@ tags:
 - flow analysis
 - metal replacement
 - anisotropy
-- fiber orientation tensor (fot)
+- anisotropic
+- fiber orientation tensor
+- fot
 - optimized fiber orientation tensor mapping
 - finite element analysis
-- ai-assisted simulation
 - digimat
 - micromechanics
 - composite

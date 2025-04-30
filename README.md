@@ -8,13 +8,15 @@ AirGo Design's ATLAS-AI, a proprietary AI-assisted CAE simulation software, offe
 
 ## Unlocking the Potential of Fiber-Reinforced Thermoplastics
 
-The growing demand for sustainable and high-performance engineering polymers has led to the development of injection molded (Short/Long) Fiber Reinforced Thermoplastics (FRT).  FRT represents a vital segment within the development of environmentally sustainable engineering plastics, poised to supplant metals in heavy-duty components, applied in aerospace, automotive, electronics etc.
+The growing demand for sustainable and high-performance engineering polymers has led to the development of injection molded (Short/Long) Fiber Reinforced Thermoplastics Composites.  FRTP represents a vital segment within the development of environmentally sustainable engineering plastics, poised to supplant metals in heavy-duty components, applied in aerospace, automotive, electronics etc.
 
 **Why Replace Metals with Fibre Reinforced Thermoplastics?**
 
 ![img_why_replace_metal_with_FRT](assets/images/why_replace_metal_with_FRT.png)
 
-## The Challenge with Designing FRT Heavy-duty Components
+FRTP composites are at the forefront of the metal replacement revolution, offering a transformative alternative for industries under pressure to reduce weight and environmental impact. Where traditional metals face limitations—such as susceptibility to fatigue, oxidation, or excessive energy consumption in production—FRTP delivers comparable (or superior) mechanical performance with added benefits like vibration damping and electrical insulation. 
+
+## The Challenge with Designing FRTP Heavy-duty Components
 
 Even though this class of reinforced polymers have been utilized in the industry for decades, their full potential has been hindered by conventional CAE simulation methods' inability to accurately simulate their material behavior on components level. This limitation has confined their application primarily to less demanding secondary structures.
 
@@ -56,7 +58,7 @@ Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Mat
 
 AirGo Design’s ATLAS-AI suits streamline structural analysis by bridging the gap between injection molding simulations and accurate FEA models.
 
-![img_wheredowefit](assets/images/AtlasAI_overview.png)
+![img_wheredowefit](assets/images/where_does_ATLAS-AI_fit_in.png)
 
 Unlike conventional tools that merely map fiber orientation tensor data to a separate structural mesh, ATLAS-AI intelligently adapts anisotropic material properties based on both geometry and material selection.
 
@@ -104,11 +106,11 @@ For comparison, the analysis was conducted on three different Armrest model:
 
 #### Pre-Processing for Anisotropic models
 
-Moldflow and Moldex3D were used to generate Fiber orientation tensor (FOT) data required as input for ATLAS-Pre (ATLAS-AI’s dedicated pre-processor for creating anisotropic FEM models). ATLAS-Pre not only maps the FOT onto the dissimilar structure mesh but also recalibrates the data, factoring in the geometry features and material statistical data, thus ensuring higher simulation accuracy.
+Moldflow and Moldex3D were used to generate fiber orientation tensor (FOT) data required as input for ATLAS-Pre (ATLAS-AI’s dedicated pre-processor for creating anisotropic FEM models). ATLAS-Pre not only maps the fiber orientation tensor onto the dissimilar structure mesh but also recalibrates the data, factoring in the geometry features and material statistical data, thus ensuring higher simulation accuracy.
 
 ![img_CARBON_Armrest_atlasPre_1](assets/images/CARBON_Armrest_atlasPre_1.png)
 
-The anisotropic material cards are then defined and assigned according to the modified FOT profile for each element. Material properties for all FOT variations are based on the supplied AtlasMat file. 
+The anisotropic material cards are then defined and assigned according to the modified fiber orientation tensor profile for each element. Material properties for all fiber orientation tensor variations are based on the supplied AtlasMat file. 
 
 ![img_CARBON_Armrest_atlasPre_2](assets/images/CARBON_Armrest_atlasPre_2.png)
 
@@ -152,8 +154,8 @@ Atlas-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion. The 
 ![img_PoleExtender_FailurePrediction](assets/images/PoleExtender_FailurePrediction.png)
 
 ### Key Takeaway
-ATLAS-AI was validated over existing Fiber Reinforced Thermoplastic components. 
-ATLAS-AI empower engineers with more efficient and accurate simulations, along with (i) lighter models, (ii) quicker run-time, and (iii) increased reliability in simulation results.
+
+Having being proven precise over various Fiber Reinforced Thermoplastics grades and validated over existing Fiber Reinforced Thermoplastic components, ATLAS-AI empower engineers with more efficient and accurate simulations, along with (i) lighter models, (ii) quicker run-time, and (iii) increased reliability in simulation results.
 
 ## About us
 AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
