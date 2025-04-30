@@ -1,16 +1,32 @@
-title: Airgo Atlas-AI
-description: FEM plugin suite for SFRP simulations
+title: Airgo Design ATLAS-AI
+description: FEM plugin suite for Fiber Reinforced Thermoplastics simulations
 
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 tags:
-- short fiber
-- thermoplastics
-- plugin
-- atlas
-- airgo
-- short fiber reinforced thermoplastics
+- atlas-ai
+- airgo design
+- ai-powered cae simulation
+- ai-assisted cae simulation
+- fiber reinforced thermoplastics (frt)
+- injection molding simulation
+- moldex3d
+- moldflow
+- ls-dyna
+- structural analysis
+- flow analysis
+- metal replacement
+- anisotropy
+- fiber orientation tensor (fot)
+- optimized fiber orientation tensor mapping
+- finite element analysis
+- ai-assisted simulation
+- digimat
+- micromechanics
+- composite
+- multiscale
+
 
 ---
