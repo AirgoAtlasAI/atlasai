@@ -2,7 +2,7 @@
 
 ![img_AtlasAI](assets/images/AtlasAI_logo_256x256.png)
 
-AirGo Design's ATLAS-AI, a proprietary AI-assisted CAE simulation software, offers a suite of tools for manipulating FEM models with components made of highly anisotropic Fiber-Reinforced Thermoplastic Composites (FRTC).
+AirGo Design's ATLAS-AI, a proprietary AI-assisted CAE simulation software, offers a suite of tools for manipulating FEM models with components made of highly anisotropic Fiber-Reinforced Thermoplastic Composites.
 
 ---
 
@@ -10,7 +10,7 @@ AirGo Design's ATLAS-AI, a proprietary AI-assisted CAE simulation software, offe
 
 The growing demand for sustainable and high-performance engineering polymers has led to the development of injection molded (Short/Long) Fiber Reinforced Thermoplastics (FRT).  FRT represents a vital segment within the development of environmentally sustainable engineering plastics, poised to supplant metals in heavy-duty components, applied in aerospace, automotive, electronics etc.
 
-**Why Replace Metals with Fibre Reinforced Thermoplastic Composites (FRTC)?**
+**Why Replace Metals with Fibre Reinforced Thermoplastics?**
 
 ![img_why_replace_metal_with_FRT](assets/images/why_replace_metal_with_FRT.png)
 
@@ -41,10 +41,10 @@ ATLAS-AI delivers fast results without sacrificing accuracy. It captures multi-l
 ATLAS-AI incorporates a custom-developed failure criterion that outperforms conventional models by leveraging AI-generated allowables, enabling more accurate and reliable failure prediction.
 
 ### Material/Software Agnostic 
-ATLAS-AI is fully compatible with a broad range of FEA platforms—supporting both implicit and explicit solvers—and is applicable to all types of fiber-reinforced thermoplastics (FRTs), regardless of chemical composition.
+ATLAS-AI is fully compatible with a broad range of FEA platforms—supporting both implicit and explicit solvers—and is applicable to all types of fiber-reinforced thermoplastics, regardless of chemical composition.
 
 ### Third-Party Validated
-Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different FRTC material projects, i.e., comparing Atlas-AI vs conventional CAE methods. Atlas-AI models completed with less time and predictions were closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams.
+Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different fiber-reinforced thermoplastic material projects, i.e., comparing Atlas-AI vs conventional CAE methods. Atlas-AI models completed with less time and predictions were closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams.
 
 ---
 
@@ -79,9 +79,9 @@ Shown below is an example of how the modules are typically integrated into a FEM
 
 ## Accuracy with ATLAS-MAT
 
-**ATLAS-MAT** is an internal module (not available for licensing) within the ATLAS-AI suite that uses a pre-trained algorithm based on historical data to generate anisotropic material properties of Fiber Reinforced Thermoplastic Composite (FRTC) that change based on fiber orientation. 
+**ATLAS-MAT** is an internal module (not available for licensing) within the ATLAS-AI suite that uses a pre-trained algorithm based on historical data to generate anisotropic material properties of Fiber Reinforced Thermoplastic Composites that change based on fiber orientation. 
 
-ATLAS-MAT’s Data-Corrected Micromechanics (DCM) has proven to be accurate. Shown below is a comparison of accuracy between Tsai-Hill method and ATLAS-MAT method on predicting 45-degree Tensile strength (S45) and 45-degree stiffness (E45) over a set of 16 different FRTC materials. The ATLAS-MAT prediction showed a significantly lower error percentage over all the grades of FRTC materials. 
+ATLAS-MAT’s Data-Corrected Micromechanics (DCM) has proven to be accurate. Shown below is a comparison of accuracy between Tsai-Hill method and ATLAS-MAT method on predicting 45-degree Tensile strength (S45) and 45-degree stiffness (E45) over a set of 16 different Fiber Reinforced Thermoplastic materials. The ATLAS-MAT prediction showed a significantly lower error percentage over all the grades of Fiber Reinforced Thermoplastic materials. 
 
 ![img_tsaihill vs atlasmat](assets/images/tsaihill_vs_atlasmat.png)
 
@@ -152,7 +152,7 @@ Atlas-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion. The 
 ![img_PoleExtender_FailurePrediction](assets/images/PoleExtender_FailurePrediction.png)
 
 ### Key Takeaway
-ATLAS-AI was validated over existing FRTC components. 
+ATLAS-AI was validated over existing Fiber Reinforced Thermoplastic components. 
 ATLAS-AI empower engineers with more efficient and accurate simulations, along with (i) lighter models, (ii) quicker run-time, and (iii) increased reliability in simulation results.
 
 ## About us
