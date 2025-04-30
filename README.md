@@ -40,7 +40,7 @@ Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Mat
 
 ---
 
-##  Where does Atlas-AI Fit in?
+## Where does Atlas-AI Fit in?
 
 AirGo Design’s ATLAS-AI suits streamline structural analysis by bridging the gap between injection molding simulations and accurate FEA models.
 
@@ -61,22 +61,59 @@ ATLAS-AI currently consists of 5 main modules:-AtlasMat, AtlasPre, AtlasPost, At
 
 Shown below is an example of how the modules are typically integrated into a FEM analysis. AtlasPre takes the information from the manufacturing simulation and integrates the anisotropic properties to the FEM model. After the simulation, AtlasPost is used to post-process and generate result images.
 
-![Workflow](assets/images/General_workflow01.png)
+![img_Workflow](assets/images/General_workflow01.png)
 
 ---
-  
+
+## Accuracy with ATLAS-MAT
+
+**ATLAS-MAT** is an internal module (not available for licensing) within the ATLAS-AI suite that uses a pre-trained algorithm based on historical data to generate anisotropic material properties of Fiber Reinforced Thermoplastic Composite (FRTC) that change based on fiber orientation. 
+
+ATLAS-MAT’s Data-Corrected Micromechanics (DCM) has proven to be accurate. Shown below is a comparison of accuracy between Tsai-Hill method and ATLAS-MAT method on predicting 45-degree Tensile strength (S45) and 45-degree stiffness (E45) over a set of 16 different FRTC materials. The ATLAS-MAT prediction showed a significantly lower error percentage over all the grades of FRTC materials. 
+
+![img_tsaihill vs atlasmat](assets/images/tsaihill_vs_atlasmat.png)
+
+## Part Level Validation 
+
+### Case Study (1) Aircraft Armrest
+
+The ATLAS-AI-integrated FEM models was evaluated on an established AirGo Design’s CARBON aircraft seat armrest  component.  It is noteworthy that ATLAS-AI methodology was originally applied in development of the CARBON seats starting from design/manufacturing of the armrest, which was fabricated and tested according to standard abuse loads. The material grade is of the PEI family with 20% carbon fiber content.
+
+![img_CARBON_Armrest](assets/images/CARBON_Armrest.png)
+
+The structural simulation was conducted with Ansys LS-Dyna. A Quasi-static analysis was set up to simulate the downward abuse load. To achieve better precision in  simulating the armrest's deformation under load, the FEM model incorporates not only the armrest itself but also the test rig it is secured to.
+
+![img_CARBON_Armrest_FEM](assets/images/CARBON_Armrest_FEM.png)
+
+For comparison, the analysis was conducted on three different Armrest model:
+1.  Anisotropic armrest LS-Dyna model created using ATLAS-AI integrated with Moldflow
+2.	Anisotropic armrest LS-Dyna model created using ATLAS-AI integrated with Moldex3D BLM approach. 
+3.	Quasi-isotropic armrest LS-Dyna model, assuming a conventional 70% knockdown factor on the TDS 0-degree stress-strain curve. (i.e. without ATLAS-AI and Moldex3D)
+
+#### Pre-Processing for Anisotropic models
+
+Moldflow and Moldex3D were used to generate Fiber orientation tensor (FOT) data required as input for ATLAS-Pre (ATLAS-AI’s dedicated pre-processor for creating anisotropic FEM models). ATLAS-Pre not only maps the FOT onto the dissimilar structure mesh but also recalibrates the data, factoring in the geometry features and material statistical data, thus ensuring higher simulation accuracy.
+
+![img_CARBON_Armrest_atlasPre_1](assets/images/CARBON_Armrest_atlasPre_1.png)
+
+The anisotropic material cards are then defined and assigned according to the modified FOT profile for each element. Material properties for all FOT variations are based on the supplied AtlasMat file. 
+
+![img_CARBON_Armrest_atlasPre_2](assets/images/CARBON_Armrest_atlasPre_2.png)
+
+#### Load vs Displacement
+Based on the load displacement curves for test and FEM, the ATLAS-AI/Moldflow approach achieved **70%** accuracy whereas ATLAS-AI/Moldex3D approach demonstrated a notable **91.8%** accuracy, outperforming conventional method with 59.2%.
+
+![CARBON_Armrest_FEM_vs_Test](assets/images/CARBON_Armrest_FEM_vs_Test.png)
+
+#### Failure Prediction
+
+ATLAS-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion and compared with actual part failure. Y-Failure plots show the onset of failure around the inner horizontal rib location. Analysis of test pictures showed strong indications that the failure was likely to have been initiated at the same rib location. 
+
+![CARBON_Armrest_FEM_vs_Test](assets/images/CARBON_Armrest_FailurePrediction.png)
+
+---
 ## About us
 AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
-
-### The EV Industry
-
-The demand for battery power, measured in gigawatt-hours, is expected to grow from 185 GWh in 2020 to 2,035 GWh by 2030, representing an 11-fold increase, with nearly 90% of the demand from transportation alone. Lithium-ion is the most dominant rechargeable battery technology, accounting for just over 40% of the global revenue share in 2022, driven mostly by its use in the EV industry.
-
-Over the years, metals have dominated the market for EV battery cases owing to their advantages, such as being extremely robust and impact-resistant, high-temperature tolerance, flame-retardant, and affordable. However, in recent years, the penetration of composite battery cases has been growing at a rapid pace owing to factors such as lighter weight, high production rate, and to a certain extent, higher mechanical performance compared to metals. 
-
-AirGo is looking into composite battery enclosures for the rapidly emerging short/medium-haul electric aircraft market, i.e., a combination of commercial urban air mobility vehicles (UAVs, eVTOLs, etc.) (e.g., E-hang EH216-S, Xpeng AeroHT, etc.) and larger regional/private jets e-aircraft such as COMAC ARJ21, Heart airspace’s ES-30, Energia Electric (E9-FE), etc. This market was valued at $9 billion in 2022, with a 20% CAGR, and has the prospect to reach $67 billion by 2033.
-
-Atlas-AI provide the necessary tools for the job.
 
 ---
 
