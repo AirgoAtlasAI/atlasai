@@ -1,117 +1,71 @@
-# AirGo Atlas-AI
+# AirGo Design Atlas-AI
 
-![AtlasAI](assets/images/AtlasAI_logo_256x256.png)
+![img_AtlasAI](assets/images/AtlasAI_logo_256x256.png)
 
-AirGo’s proprietary *AI-assisted CAE* simulation software, **ATLAS-AI**, provides a collection of tools for manipulating FEM models that have anisotropic material properties. This software is tailored for structures/components made of Fiber-Reinforced Thermoplastic Composites (FRTC).
+AirGo Design's ATLAS-AI, a proprietary AI-assisted CAE simulation software, offers a suite of tools for manipulating FEM models with components made of highly anisotropic Fiber-Reinforced Thermoplastic Composites (FRTC).
+
+The growing demand for sustainable and high-performance engineering polymers has led to the development of injection molded (Short/Long) Fiber Reinforced Thermoplastics (FRT). This class of reinforced polymers have been utilized in the industry for decades, their full potential has been hindered by conventional CAE simulation methods' inability to accurately simulate their material behavior on components level. This limitation has confined their application primarily to less demanding secondary structures. FRT represents a vital segment within the development of environmentally sustainable engineering plastics, poised to supplant metals in heavy-duty components, applied in aerospace, automotive, electronics etc.
+
+---
+
+## The Challenge with Designing FRT Heavy-duty Components
+
+The mechanical performance of Fiber Reinforced Thermoplastics components are intricately tied to geometry, material selection, and manufacturing parameters. Unlike its metallic counterparts, Fiber Reinforced Thermoplastics components exhibit strong anisotropy—whereby stiffness and strength are influenced by fiber orientation. Fiber orientation is heavily dependent on a multitude of geometry and manufacturing factors.
+
+![img_FOT_in_FRT](assets/images/FOT_in_FRT_component.png)
+
+When it comes to simulation, working between micro-scale and macro-scale demands significant time, expertise in various domains, and computing resources. Furthermore, accessing material property data (including material data for the components of the compound, filler etc.) and allowables are not always straightforward, often necessitating costly laboratory testing and specialized knowledge. ATLAS-AI addresses these issues head-on.
 
 ---
 
 ## Why use ATLAS-AI?
 
-- **AI** and **DATA-DRIVEN**: Material property generation based on statistically derived data. No micro-level simulation required. Fiber orientation data is adjusted for accuracy.
+### AI and Data-Driven
+Utilizing a statistically derived material property database, micro-level simulation becomes unnecessary. Fiber orientation data is meticulously adjusted based on structure geometry for accuracy.
 
-- **FAST** yet **ACCURATE**: No trade-off between speed and accuracy. No solver coupling required. The Atlas-AI method does not require detailed FEM model.  
+### Fast Yet Accurate
+ATLAS-AI delivers fast results without sacrificing accuracy. It captures multi-layer property variations through the thickness of the part—without requiring high-resolution FEM models. Since it operates entirely in pre- and post-processing, there’s no need for co-simulation or data exchange with external software. This results in:
+ - 95% faster load times
+ - 90% smaller result files
+ - 65% lower RAM usage
 
-- **PROPRIETRY FAILURE MODEL**: Atlas-AI includes AirGo's proprietary failure criterion which outperforms standard failure models.
+### Proprietary Failure Model 
+ATLAS-AI incorporates a custom-developed failure criterion that outperforms conventional models by leveraging AI-generated allowables, enabling more accurate and reliable failure prediction.
 
-- **MATERIAL/SOFTWARE AGNOSTIC**: Atlas-AI solutions can be adapted to multiple FEM software, covering implicit and explicit analysis. Atlas-AI solutions can be applied to all FRTC standards. 
+### Material/Software Agnostic 
+ATLAS-AI is fully compatible with a broad range of FEA platforms—supporting both implicit and explicit solvers—and is applicable to all types of fiber-reinforced thermoplastics (FRTs), regardless of chemical composition.
 
-- **THIRD-PARTY VALIDATED**- Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different FRTC material projects, *i.e.*, comparing Atlas-AI vs conventional CAE methods. Atlas-AI models completed with less time and predictions were closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams. 
+### Third-Party Validated
+Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Materials (MCAM) and SAFRAN on two different FRTC material projects, i.e., comparing Atlas-AI vs conventional CAE methods. Atlas-AI models completed with less time and predictions were closer to actual physical testing data, in comparison to conventional CAE simulation undertaken by MCAM and Safran engineering teams.
 
 ---
 
-##  Where does Atlas-AI fit in?
+##  Where does Atlas-AI Fit in?
 
+AirGo Design’s ATLAS-AI suits streamline structural analysis by bridging the gap between injection molding simulations and accurate FEA models.
 
+![img_wheredowefit](assets/images/AtlasAI_overview.png)
 
-![wheredowefit](assets/images/AtlasAI_overview.png)
-
-In the simplest sense, Atlas-AI bridges the divide between manufacturing simulation and structural simulation.
-
-In the bigger picture, Atlas-AI helps engineers reached light-weighting design goals with efficiency, accuracy and minimal computational resources. With Atlas-AI, design iterations can be reduced from weeks (or months) to days.
+Unlike conventional tools that merely map fiber orientation tensor data to a separate structural mesh, ATLAS-AI intelligently adapts anisotropic material properties based on both geometry and material selection.
 
 ---
 
 ## ATLAS-AI at a Glance
 
+ATLAS-AI currently consists of 5 main modules:-AtlasMat, AtlasPre, AtlasPost, AtlasXL, and AtlasEndura.
+
 ![The full suite](assets/images/AtlasAI_alltools.png)
 
 
 ## Workflow
-Shown below is an example of how the modules are typically integrated into a FEM analysis. AtlasPre takes the information from the manufacturing simulation (Moldflow Analysis) and integrates the anisotropic properties to the FEM model. After the simulation, AtlasPost is used to post-process and generate result files which can then be viewed using AtlasPost_Viewer.
+
+Shown below is an example of how the modules are typically integrated into a FEM analysis. AtlasPre takes the information from the manufacturing simulation and integrates the anisotropic properties to the FEM model. After the simulation, AtlasPost is used to post-process and generate result images.
 
 ![Workflow](assets/images/General_workflow01.png)
 
 ---
-## AtlasMat
-
-AtlasMat hosts a material library of up to 30+ SFRT material standards. 
-AI and statistics based corrections are preformed based on the inputs (minimal requirement is fiber/matrix tensile modulus and density)
-
-A encrypted table of coefficients is generated to serve as input for AtlasPre and AtlasPost. The coefficients correspond to numerical functions for both static and strain-rate-dependent dynamic material properties.
-
-![AtlasMat](assets/images/atlasmat.png)
-
-
-
-## AtlasPre
-As shown in [Workflow](#-workflow), AtlasPre offers a streamline approach to setup a model with anisotropic material properties (Currently supports LS-Dyna MAT040, LS-Dyna User-Defined Material). 
-
-This process includes:-
-
-- Thickness field mapping (for material field data correction)
-- New FEM file creation. 
-- Quickcheck of material properties using gmsh as viewer. Include macros for generating images for documentation purposes.
-
-![AtlasPre](assets/images/atlaspre.png)
-
-
-## AtlasPost
-
-Large FEM output binary files typically contains everything i.e. all element and all results. Conventional post-processing software will be sluggish when loading a model with large number of material properties.
-
-AtlasPost allows users to downselects to the components of interest and splits the data by result types instead of timesteps. Thus, this gives:-
-   - Smaller files for post-processing. (up to **90% smaller**)
-   - The choice to create and load only selected results (e.g. displacement, stress, Y-Failure).
-   - Faster loading time (up to **90% faster**)
-
-![AtlasPost](assets/images/atlaspost.png)
-
-
-## AtlasXL
-
-AtlasXL is a specialized tool for data extraction from large assemblies with single/ multiple anisotropic parts.
-
-AtlasXL currently supports data extraction from LS-Dyna d3plots and binout files.
-
-![AtlasXL](assets/images/atlasxl.png)
-
-## AtlasEndura
-
-AtlasEndura provides the framework for conducting fatigue analysis on SFRT parts. LifeCycle and Failure life are based on AirGo's proprietary fatigue failure criterion.
-
-![AtlasEndura](assets/images/atlasendura.png)
-
----
-
-## Other General Features
-
-- Autofill based on naming convention:
-
-    Anisotropic material simulation require working with both reading in and writing out multiple files. 
-    To speed up the filename entry process, Atlas-AI provides some basic features to autofill. This feature based on the assumption that the files are named in certain logic or convention
-
-    ![autofill](assets/images/general_autofill.gif)
-
-    
-- Autofill based on working directory and filename extensions.
-
-  Another logic that is built into some modules is that all related input files are placed in the same directory. Given  working directory, the input files are autofilled.
-
-  ![autofill](assets/images/general_autofill_wdir.png)
-
   
-### About us
+## About us
 AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
 
 ### The EV Industry
