@@ -18,7 +18,7 @@ FRTP composites are at the forefront of the metal replacement revolution, offeri
 
 ## The Challenge with Designing FRTP Heavy-duty Components
 
-Even though this class of reinforced polymers have been utilized in the industry for decades, their full potential has been hindered by conventional CAE simulation methods' inability to accurately simulate their material behavior on components level. This limitation has confined their application primarily to less demanding secondary structures.
+Even though this class of reinforced polymers have been utilized in the industry for decades, their full potential has been hindered by conventional CAE simulation methods' inability to accurately simulate their material behavior on component level. This limitation has confined their application primarily to less demanding secondary structures.
 
 The mechanical performance of Fiber Reinforced Thermoplastics components are intricately tied to geometry, material selection, and manufacturing parameters. Unlike its metallic counterparts, Fiber Reinforced Thermoplastics components exhibit strong anisotropy—whereby stiffness and strength are influenced by fiber orientation. Fiber orientation is heavily dependent on a multitude of geometry and manufacturing factors.
 
@@ -56,13 +56,13 @@ Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Mat
 
 ---
 
-## Where does Atlas-AI Fit in?
+## Where Does Atlas-AI Fit In?
 
 AirGo Design’s ATLAS-AI suits streamline structural analysis by bridging the gap between injection molding simulations and accurate FEA models.
 
 ![img_wheredowefit](assets/images/where_does_ATLAS-AI_fit_in.png)
 
-Unlike conventional tools that merely map fiber orientation tensor data from a flow analysis software,(i.e Moldflow and Moldex3D), to a separate structural mesh, ATLAS-AI intelligently adapts anisotropic material properties based on both geometry and material selection.
+Unlike conventional tools that merely map fiber orientation tensor data from a flow analysis software,(i.e. Moldflow and Moldex3D), to a separate structural mesh, ATLAS-AI intelligently adapts anisotropic material properties based on both geometry and material selection.
 
 ---
 
@@ -103,7 +103,7 @@ The structural simulations were conducted with Ansys LS-Dyna. To achieve better 
 
 For comparison, the analysis was conducted on three different Armrest model:
 1.  Anisotropic armrest LS-Dyna model created using ATLAS-AI integrated with Moldflow
-2.	Anisotropic armrest LS-Dyna model created using ATLAS-AI integrated with Moldex3D BLM approach. 
+2.	Anisotropic armrest LS-Dyna model created using ATLAS-AI integrated with Moldex3D BLM method. 
 3.	Quasi-isotropic armrest LS-Dyna model, assuming a conventional 70% knockdown factor on the TDS 0-degree stress-strain curve. (i.e. without ATLAS-AI and Moldex3D)
 
 #### Pre-Processing for Anisotropic models
@@ -117,7 +117,7 @@ The anisotropic material cards are then defined and assigned according to the mo
 ![img_CARBON_Armrest_atlasPre_2](assets/images/CARBON_Armrest_atlasPre_2.png)
 
 #### Load vs Displacement
-Based on the load displacement curves for test and FEM, the ATLAS-AI/Moldflow approach achieved **70%** accuracy whereas ATLAS-AI/Moldex3D approach demonstrated a notable **91.8%** accuracy, outperforming conventional method with 59.2%.
+Based on the load displacement curves for test and FEM, the ATLAS-AI/Moldflow model achieved **70%** accuracy whereas the ATLAS-AI/Moldex3D model demonstrated a notable **91.8%** accuracy, outperforming conventional method with 59.2%.
 
 ![img_CARBON_Armrest_FEM_vs_Test](assets/images/CARBON_Armrest_FEM_vs_Test.png)
 
@@ -157,7 +157,7 @@ Atlas-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion. The 
 
 ### Key Takeaway
 
-Having being proven precise over various Fiber Reinforced Thermoplastics grades and validated over existing Fiber Reinforced Thermoplastic components, ATLAS-AI empower engineers with more efficient and accurate simulations, along with (i) lighter models, (ii) quicker run-time, and (iii) increased reliability in simulation results.
+ATLAS-AI has demonstrated its precision across numerous Fiber Reinforced Thermoplastics grades and has been validated on existing components made from these materials. This empowers engineers with more efficient and accurate simulations, resulting in (i) lighter models, (ii) quicker run-time, and (iii) increased reliability in simulation results.
 
 ## About us
 AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
