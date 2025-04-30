@@ -4,11 +4,19 @@
 
 AirGo Design's ATLAS-AI, a proprietary AI-assisted CAE simulation software, offers a suite of tools for manipulating FEM models with components made of highly anisotropic Fiber-Reinforced Thermoplastic Composites (FRTC).
 
-The growing demand for sustainable and high-performance engineering polymers has led to the development of injection molded (Short/Long) Fiber Reinforced Thermoplastics (FRT). This class of reinforced polymers have been utilized in the industry for decades, their full potential has been hindered by conventional CAE simulation methods' inability to accurately simulate their material behavior on components level. This limitation has confined their application primarily to less demanding secondary structures. FRT represents a vital segment within the development of environmentally sustainable engineering plastics, poised to supplant metals in heavy-duty components, applied in aerospace, automotive, electronics etc.
-
 ---
 
+## Unlocking the Potential of Fiber-Reinforced Thermoplastics
+
+The growing demand for sustainable and high-performance engineering polymers has led to the development of injection molded (Short/Long) Fiber Reinforced Thermoplastics (FRT).  FRT represents a vital segment within the development of environmentally sustainable engineering plastics, poised to supplant metals in heavy-duty components, applied in aerospace, automotive, electronics etc.
+
+**Why Replace Metals with Fibre Reinforced Thermoplastic Composites (FRTC)?**
+
+![img_why_replace_metal_with_FRT](assets/images/why_replace_metal_with_FRT.png)
+
 ## The Challenge with Designing FRT Heavy-duty Components
+
+Even though this class of reinforced polymers have been utilized in the industry for decades, their full potential has been hindered by conventional CAE simulation methods' inability to accurately simulate their material behavior on components level. This limitation has confined their application primarily to less demanding secondary structures.
 
 The mechanical performance of Fiber Reinforced Thermoplastics components are intricately tied to geometry, material selection, and manufacturing parameters. Unlike its metallic counterparts, Fiber Reinforced Thermoplastics components exhibit strong anisotropy—whereby stiffness and strength are influenced by fiber orientation. Fiber orientation is heavily dependent on a multitude of geometry and manufacturing factors.
 
@@ -40,6 +48,10 @@ Blind validation exercises were conducted with Mitsubishi Chemicals Advanced Mat
 
 ---
 
+![img_CAE_metal_vs_FRT](assets/images/CAE_metal_vs_FRT.png)
+
+---
+
 ## Where does Atlas-AI Fit in?
 
 AirGo Design’s ATLAS-AI suits streamline structural analysis by bridging the gap between injection molding simulations and accurate FEA models.
@@ -54,7 +66,7 @@ Unlike conventional tools that merely map fiber orientation tensor data to a sep
 
 ATLAS-AI currently consists of 5 main modules:-AtlasMat, AtlasPre, AtlasPost, AtlasXL, and AtlasEndura.
 
-![The full suite](assets/images/AtlasAI_alltools.png)
+![img_AtlasAI_alltools](assets/images/AtlasAI_alltools.png)
 
 
 ## Workflow
@@ -138,6 +150,10 @@ Both ATLAS-AI/Moldflow and ATLAS-AI/Moldex3D anisotropic model achieved accuraci
 Atlas-Post was used to assess ATLAS-AI’s proprietary Y-Failure Criterion. The simulation accurately predicted the failure location at the fastener point.
 
 ![img_PoleExtender_FailurePrediction](assets/images/PoleExtender_FailurePrediction.png)
+
+### Key Takeaway
+ATLAS-AI was validated over existing FRTC components. 
+ATLAS-AI empower engineers with more efficient and accurate simulations, along with (i) lighter models, (ii) quicker run-time, and (iii) increased reliability in simulation results.
 
 ## About us
 AirGo develops innovative lightweight technologies for demanding applications in various industries. https://www.airgodesign.com/company
